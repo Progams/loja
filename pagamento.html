@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pagamento</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .payment-method {
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-5px);
+        }
+
+        .payment-method img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .payment-method p {
+            color: #888888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formas de Pagamento</h1>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="visa.png" alt="Visa">
+                <p>Cartão de Crédito</p>
+            </div>
+            <div class="payment-method">
+                <img src="mastercard.png" alt="Mastercard">
+                <p>Cartão de Crédito</p>
+            </div>
+            <div class="payment-method">
+                <img src="paypal.png" alt="PayPal">
+                <p>PayPal</p>
+            </div>
+            <div class="payment-method">
+                <img src="boleto.png" alt="Boleto">
+                <p>Boleto Bancário</p>
+            </div>
+            <div class="payment-method">
+                <img src="imagens/logo-pix-1024.png" alt="PIX">
+                <p>PIX</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

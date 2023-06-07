@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="stilo.css">
+  <link rel="shortcut icon" href="imagens/logo-yB3fLqS-J-transformed.png" type="image/x-icon">
+  <title>WhizTech</title>
+  <link rel="stylesheet" type="text/css" href="stilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .search-bar {
+      display: none;
+      transition: all 0.3s ease;
+      width: 0;
+      overflow: hidden;
+    }
+    .show-search-bar {
+      display: block;
+      width: 200px;
+      padding: 5px;
+      overflow: visible;
+    }
+    .search-bar input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #f2f2f2;
+      padding: 5px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .search-bar input:focus {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <script src="loja.js"></script>
+  <header>
+    <div class="logo">
+      <img id="logo" src="imagens/logo-yB3fLqS-J-transformed.png" alt="Logo">
+    </div>
+    <div class="site-title">
+      <h1><strong>WhizTech</strong></h1>
+    </div>
+    <nav>
+      <ul id="Cabeçalho">
+        <li><a href="#">Home</a></li>
+        <li><a href="#Produtos">Produtos</a></li>
+        <li><a href="#">Formas de pagamento</a></li>
+        <li><a href="file:///C:/Users/Flavi/Downloads/David/Programa%C3%A7%C3%A3o2.0/my%20loja/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <div class="search-icon" onclick="toggleSearchBar()">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Pesquisar" autofocus onkeypress="handleKeyPress(event)">
+      </div>
+    </div>
+    <button id="meuBotao" class="login-button">Login</button>
+  </header>
+
+  <section class="banner">
+    <h2>Bem-vindo ao nosso site de vendas!</h2>
+  </section>
+
+  <section class="products">
+    <h2>Produtos em Destaque</h2>
+    <ul>
+      <li class="product-item">
+        <div>
+          <img src="imagens/relogio frente logo.webp" id="" alt="Produto 1" onclick="abrirPagina('relogio.html')">
+        </div>
+        <div class="product-description">
+          <h2 id="titulo">Capa para Apple Watch</h2>
+        </div>
+      </li>
+      <li class="product-item">
+        <div>
+          <img src="imagens/relogio frente logo.webp" alt="Produto 2" onclick="abrirPagina('relogio.html')">
+        </div>
+        <div class="product-description">
+          <h2 id="titulo">Capa para Apple Watch</h2>
+        </div>
+      </li>
+      <li class="product-item">
+        <div>
+          <img src="imagens/relogio frente logo.webp" alt="Produto 3" onclick="abrirPagina('relogio.html')">
+        </div>
+        <div class="product-description">
+          <h2 id="titulo">Capa para Apple Watch</h2>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleSearchBar() {
+      var searchBar = document.getElementById("searchBar");
+      searchBar.classList.toggle("show-search-bar");
+      if (searchBar.classList.contains("show-search-bar")) {
+        searchBar.querySelector("input").focus();
+      }
+    }
+
+    function handleSearch() {
+      var searchInput = document.getElementById("searchInput");
+      var searchTerm = searchInput.value.toLowerCase();
+      
+
+      // Aqui você pode realizar a lógica de busca com o searchTerm,
+      // como pesquisar em uma lista de produtos ou fazer uma requisição
+      // para um servidor para buscar os dados correspondentes.
+
+      // Exemplo:
+      // Se você tiver uma lista de produtos, pode iterar sobre ela
+      // e verificar se o searchTerm corresponde a algum produto:
+      
+      
+      var produtos = ["produto 1", "produto 2", "produto 3"];
+      var resultados = produtos.filter(function(produto) {
+        return produto.toLowerCase().includes(searchTerm);
+      });
+
+      // Exiba os resultados da busca em algum lugar na página
+      console.log(loggin.css);
+      
+    }
+
+    function handleKeyPress(event) {
+      if (event.key === "Enter") {
+        handleSearch();
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+  <footer>
+    <p>&copy; 2023 WhizMarket. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("meuBotao").addEventListener("click", function() {
+      window.location.href = "Login.html";
+    });
+  </script>
+</body>
+</html>

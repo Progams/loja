@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(136, 8, 153);
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 10px;
+    }
+    
+    input,
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: rgb(34, 1, 56);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Contato</h1>
+  <div class="login-container">
+    <h2>Nos envie um email sobre o ocorrido com você</h2>
+    <form action="https://api.sheetmonkey.io/form/kT31ZT4DKBD9ciZvACDRuz" method="POST">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" placeholder="Digite seu usuário">
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+      <button type="submit">Enviar-Email</button>
+    </form>
+    <div class="gamer-text"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Estilos do contêiner de cadastro */
+  .signup-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos do formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #800080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4B0082;
+  }
+  
+  .gamer-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .gamer-text p {
+    font-size: 14px;
+  }
+  
+  .gamer-text a {
+    color: #800080;
+    text-decoration: none;
+  }
+  
+  .gamer-text a:hover {
+    color: #4B0082;
+  }
+  
